@@ -1,0 +1,11 @@
+[Unit]
+Description=Start asusd after login
+After=default.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/run.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=default.target
